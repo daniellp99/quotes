@@ -1,9 +1,3 @@
-import { connect } from "@planetscale/database";
-import { drizzle } from "drizzle-orm/planetscale-serverless";
-import { eq } from "drizzle-orm";
-
-import { config } from "@/db/schema/config";
-import { authors, categories, quotes } from "@/db/schema/schema";
 import getAllQuotes from "./getAllQuotes";
 
 const prevQuoteObj = {
