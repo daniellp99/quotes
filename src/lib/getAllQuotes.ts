@@ -11,6 +11,7 @@ export default async function getAllQuotes(): Promise<Quote[]> {
 
   const result: Quote[] = await db
     .select({
+      id: quotes.id,
       author: authors.author,
       category: categories.category,
       quote: quotes.quote,
